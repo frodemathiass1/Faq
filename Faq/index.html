@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Retro Flyreiser FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Scripts/jquery-3.2.1.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="Scripts/FaqJavaScript.js"></script>
+    <script src="Scripts/FaqJavaScript_Validering.js"></script>
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">           
+            <a href="#" class="nav navbar-brand" > Retro Flyreiser</a>
+        </div>
+    </nav>
+    <br /><br /><br /><br />
+
+        <div class="container">
+            <div class="jumbotron text-center" id="background">
+                <div id="jumboBox">
+                    <h1 class="shadow">Retro Flyreiser</h1>
+                    <p class="jumbo-brodtext">
+                        Vi er fortsatt under intens utvikling. <br />
+                        I mellomtiden kan du sjekke ut vår hjelpeside...
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </div>
+
+        <div class="container">
+            <div class="col col-md-10 col-md-offset-1">
+                <h3>Hjelpesenter</h3>
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading faq-header">
+                            <div data-toggle="collapse" class="panel-title expand" style="cursor:pointer">
+                                <div class="icon right-arrow pull-right"><span class='glyphicon glyphicon-chevron-up'></span></div>
+                                <span class="glyphicon glyphicon-plane"></span>
+                                <div class="overskrift">Ofte stillte spørsmål</div>
+                            </div>
+                        </div>
+                        <div class="panel-collapse collapse">
+                            <div class="panel-body faq-innhold"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container">
+            <div class="col col-md-10 col-md-offset-1">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading kunde-sporsmal-header">
+                            <div data-toggle="collapse" class="panel-title expand" style="cursor:pointer">
+                                <div class="icon right-arrow pull-right"><span class='glyphicon glyphicon-chevron-up float-right'></span></div>
+                                <span class="glyphicon glyphicon-briefcase"></span>
+                                <div class="overskrift">Kundespørsmål og svar</div>
+                            </div>
+                        </div>
+                        <div class="panel-collapse collapse">
+                            <div class="panel-body kunde-sporsmal-innhold"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+                <div class="col col-md-10 col-md-offset-1">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading kontakt-header">
+                                <div data-toggle="collapse" class="panel-title expand" style="cursor:pointer">
+                                    <div class="icon right-arrow pull-right"><span class='glyphicon glyphicon-chevron-up'></span></div>
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                    <div class="overskrift">Kontakt oss</div>
+                                </div>
+                            </div>
+                            <div class="panel-collapse collapse">
+                                <div class="panel-body kontakt-innhold">
+                                    <div id="sporsmal-skjema" class="form-group">
+                                        <h5>Registrer hendvendelse</h5>
+                                        <table class="table table-condensed">
+                                            <tr>
+                                                <td><input class="form-control" type="text" id="txtFornavn" placeholder="Fornavn" required /></td>
+                                                <td id="feilFornavn"></td>
+                                                <td><input class="form-control" type="text" id="txtEtternavn" placeholder="Etternavn" required /></td>
+                                                <td id="feilEtternavn"></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <input class="form-control" type="text" id="txtEpost" placeholder="Epost" required /></td>
+                                                <td id="feilEpost"></td>
+                                                <td>
+                                                    <select id="txtKategori" class="form-control">
+                                                        <option>Bestillinger</option>
+                                                        <option>Bagasje </option>
+                                                        <option>Spesielle behov </option>
+                                                        <option>Annet </option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <textarea class="form-control" id="txtSporsmal" placeholder="Her kan du skrive inn ditt spørsmål" cols="1" rows="5"></textarea>
+                                        <p id="feilSporsmal"></p>
+                                        <button id="send-sporsmal" disabled class="btn btn-primary">Send inn spørsmål</button>
+                                        <div class="sporsmal-motatt" style="display:none">Spørsmål mottatt!</div>
+                                        <div id="skjema-validering-feil"></div>
+                                        <br />
+                                        <p class="kontakt-info pull-right">
+                                            <span class="glyphicon glyphicon-phone-alt"></span>  +49 22 33 44 55 |
+                                            <span class="glyphicon glyphicon-envelope"></span><a href="mailto:kundeservice@retro.no">  Send e-post</a>                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+    <br />
+    <footer>
+        <p>Webapplikasjoner 2017 - Høgskolen i Oslo og Akershus</p>
+    </footer>
+</body>
+</html>

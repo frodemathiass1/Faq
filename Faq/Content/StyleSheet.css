@@ -1,0 +1,112 @@
+﻿html {
+    font-family: 'Open Sans',sans-serif;
+}
+
+p {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 100%;
+    font-weight:300;
+}
+
+/**Jumbotron Background*/
+#background {
+    background-image: url('background.jpg');
+    background-size: 100%;
+    -webkit-box-shadow: 5px 5px 76px 0px rgba(77,77,77,1);
+    -moz-box-shadow: 5px 5px 46px 0px rgba(77,77,77,1);
+    box-shadow: 5px 5px 46px 0px rgba(77,77,77,1);
+}
+
+h1 {
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 12px;
+}
+
+.jumbotron p {
+    font-size: 100%;
+    color: white;
+}
+
+.jumbotron h1 {
+    font-size: 250%;
+    color: #ecf0f1;
+}
+
+#jumboBox {
+    color: #ECF0F1;
+    letter-spacing:1px;
+}
+
+.kontakt-info {
+    font-family: 'Open Sans',sans-serif;
+    color: black;
+    font-size:100%;
+}
+
+.glyphicon{
+    font-size:80%;  
+}
+
+.shadow {
+    text-shadow: 35px 25px 20px  black;
+}
+
+footer {
+    font-family: 'Open Sans',sans-serif;
+    text-align: center;
+    font-size: 100%;
+}
+
+.panel-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.panel-body {
+    font-family: 'Lato',sans-serif;
+    background-color: #ECECEC;
+}
+
+.panel-heading:hover {
+    background-color: #E1E1E1;
+}
+/**Hendvendelses Skjema*/
+#txtFornavn, #txtEtternavn, #txtEpost, #txtKategori, #txtSporsmal, #send-sporsmal {
+    font-family: Calibri,sans-serif;
+    font-size: 120%;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-text {
+    font-size: 100%;
+    font-family: 'Lato',sans-serif;
+}
+
+.sporsmal{
+    font-weight:bold;
+    border-bottom:1px solid lightgrey;
+}
+
+.svar {
+    margin: 1em;
+    padding: 1em;
+}
+.sporsmal-kunde {
+    font-family: 'Lato',sans-serif;
+    border-bottom: 1px solid lightgrey;
+}
+
+.svar-kunde {
+    font-family: 'Lato',sans-serif;
+    padding: 1em;
+}
+
+#send-sporsmal {
+    font-family: 'Lato',sans-serif;
+    font-weight:300;
+}
+
+.overskrift {
+    display: inline-block;
+    margin-left: 10px;
+}
+
