@@ -1,8 +1,8 @@
-Frode Mathiassen
-s305449@stud.hioa.no
+School assignment for OsloMet - Storbyuniversitet for the course ITPE3200 - Webapplcations.
+This is the 3rd and last assignment in a series of developing modules and pages for a Flight booking system with.NET,using
+MVC, and WebAPI like this one.  The assignment was graded with an A, which is why i decided to publish the code on Github. 
 
-Azure URL: http://retrofaq.azurewebsites.net/
 
-Ønsket funksjonalitet: Søkefelt for å lete opp spørsmål i DB.
-Problemer med validering, server error pga Windows update, 
-samt Azure problemer satt dog desverre en stopper for å få utviklet det....
+The webapplication is published on Azure and can be found here: http://retrofaq.azurewebsites.net/
+
+
